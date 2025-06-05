@@ -38,6 +38,18 @@
           );
           docElem.firstElementChild.appendChild(vpm);
         }
+
+        function initPage() {
+          var htmlWidth = docElem.getBoundingClientRect().width;
+          htmlWidth / ratio > 540 && (htmlWidth = 540 * ratio);
+          win.rem = htmlWidth / 16;
+          var fontSize = win.rem + "px";
+          docElem.style.fontSize = fontSize;
+          //$("textarea").css({fontSize:fontSize});
+        }
+        $(document).ready(function () {
+          initPage();
+        });
       })(window);
     </script>
   </head>
