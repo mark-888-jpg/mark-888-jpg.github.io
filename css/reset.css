@@ -66,13 +66,15 @@ button {
   font-family: inherit;
   font-weight: normal;
 }
+html {
+  font-size: 25px;
+}
 body {
   font: 14px/1.5 Microsoft Yahei, "\5FAE\8F6F\96C5\9ED1", "Tahoma",
     "hiragino sans gb", Helvetica, Arial, "\5b8b\4f53", "sans-serif";
 }
 * {
   box-sizing: border-box;
-  font-size: 25px;
 }
 ol,
 ul {

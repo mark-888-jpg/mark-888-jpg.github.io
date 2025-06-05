@@ -38,25 +38,6 @@
           );
           docElem.firstElementChild.appendChild(vpm);
         }
-
-        win.addEventListener(
-          "resize",
-          function () {
-            clearTimeout(renderTime);
-            renderTime = setTimeout(initPage, 300);
-          },
-          false
-        );
-
-        win.addEventListener(
-          "pageshow",
-          function (e) {
-            e.persisted &&
-              (clearTimeout(renderTime),
-              (renderTime = setTimeout(initPage, 300)));
-          },
-          false
-        );
       })(window);
     </script>
   </head>
